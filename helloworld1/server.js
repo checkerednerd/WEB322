@@ -4,8 +4,7 @@ var app = express();
 
 // setup a 'route' to listen on the default url path
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.send("This repository is actually on GitHub! It wasn't going up at first, but it seems that doing the following worked: 1) git init, 2) git add ., 3) commit, 4) heroku create, 5) git push heroku master");
 });
-
 // setup http server to listen on HTTP_PORT
 app.listen(HTTP_PORT);

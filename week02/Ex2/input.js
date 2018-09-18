@@ -20,5 +20,5 @@ app.get("/about", function (req, res) {
 });
 
 //set up http server to listen on HTTP_PORT
-app.listen(HTTP_PORT, onHttpStart);
+app.listen(HTTP_PORT, onHttpStart());
 // ...end web server build

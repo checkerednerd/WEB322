@@ -1,4 +1,4 @@
-var readline = require('readline'); //gives access to readline module
+//var readline = require('readline'); //gives access to readline module
 
 //to build a web server...
 var express = require("express"); //gives access to express module
@@ -13,7 +13,7 @@ function onHttpStart() {
 
 //set up a 'route' to listen on the default url (/)
 app.get("/", function (req, res) {
-    res.send("Hello World<br /><a href'/about'>Go to the page</a");
+    res.send("Hello World<br /><a href='/about'>Go to the page</a>");
 });
 
 //set up another route to listen on /about
@@ -22,9 +22,9 @@ app.get("/about", function (req, res) {
 });
 
 //set up http server to listen on HTTP_PORT
-// app.listen(HTTP_PORT, onHttpStart);
+app.listen(HTTP_PORT, onHttpStart);
+// ...end web server build
 
-// // ...end web server build
 // var rl = readline.createInterface({
 //     input: process.stdin,
 //     output: process.stdout
